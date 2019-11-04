@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.3.6)  4 NOV 2019 14:29
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.3.6)  4 NOV 2019 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,7 +1070,7 @@ Writing index file ragas.idx
 \openout5 = `composers.idx'.
 
 Writing index file composers.idx
-No file Sangita_pustakam.aux.
+(./Sangita_pustakam.aux)
 \openout1 = `Sangita_pustakam.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
@@ -1087,6 +1087,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1233,12 +1234,11 @@ l.127         }]
                 
 (That was another \errmessage.)
 
-[2]
-No file Sangita_pustakam.toc.
+[2] (./Sangita_pustakam.toc)
 \tf@toc=\write6
 \openout6 = `Sangita_pustakam.toc'.
 
-[1]
+ [1]
 Missing character: There is no स in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no र in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ल in font [lmroman12-bold]:mapping=tex-text;!
@@ -1307,7 +1307,8 @@ Missing character: There is no व in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no र in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no स in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no े in font [lmroman12-bold]:mapping=tex-text;!
- [11] [12] [13] [14]
+
+[11] [12] [13] [14]
 Missing character: There is no स in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ् in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no व in font [lmroman12-bold]:mapping=tex-text;!
@@ -1391,18 +1392,14 @@ runsystem(makeindex composers.idx)...executed safely (allowed).
 
  (./composers.ind) [23
 
-] (./Sangita_pustakam.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./Sangita_pustakam.aux) ) 
 Here is how much of TeX's memory you used:
- 24662 strings out of 493007
- 527337 string characters out of 6136720
- 650226 words of memory out of 5000000
+ 24666 strings out of 493007
+ 527421 string characters out of 6136720
+ 656859 words of memory out of 5000000
  28247 multiletter control sequences out of 15000+600000
  535230 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 55i,13n,72p,10423b,584s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,72p,10423b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Sangita_pustakam.pdf (26 pages).
