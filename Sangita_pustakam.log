@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.3.6)  5 NOV 2019 11:24
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.3.6)  5 NOV 2019 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1403,23 +1403,64 @@ Underfull \vbox (badness 10000) detected at line 1150
  []
 
 [22]
+Missing character: There is no प in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no द in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ु in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no म in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no न in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ा in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no भ in font [lmroman12-bold]:mapping=tex-text;!
+
+Overfull \hbox (60.21599pt too wide) in alignment at lines 1168--1202
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1202
+ []
+
+
+Overfull \hbox (60.21599pt too wide) in alignment at lines 1202--1213
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+Missing character: There is no स in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ञ in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ् in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no च in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ा in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no र in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ि in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ग in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ी in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no त in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ा in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no न in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ि in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no व in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no र in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no व in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ी in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ण in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ा in font [lmroman12-bold]:mapping=tex-text;!
+[23] [24]
 runsystem(makeindex ragas.idx)...executed safely (allowed).
 
- (./ragas.ind) [23
+ (./ragas.ind) [25
 
 ]
 runsystem(makeindex composers.idx)...executed safely (allowed).
 
- (./composers.ind) [24
+ (./composers.ind) [26
 
 ] (./Sangita_pustakam.aux) ) 
 Here is how much of TeX's memory you used:
- 24667 strings out of 493007
- 527431 string characters out of 6136720
- 659830 words of memory out of 5000000
- 28248 multiletter control sequences out of 15000+600000
+ 24668 strings out of 493007
+ 527439 string characters out of 6136720
+ 681942 words of memory out of 5000000
+ 28249 multiletter control sequences out of 15000+600000
  535230 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  55i,13n,72p,10423b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Sangita_pustakam.pdf (27 pages).
+Output written on Sangita_pustakam.pdf (29 pages).
