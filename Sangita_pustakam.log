@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.3.6)  4 NOV 2019 14:50
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.3.6)  5 NOV 2019 11:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1383,23 +1383,43 @@ Underfull \vbox (badness 10000) detected at line 1111
  []
 
 [21]
+Missing character: There is no क in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no े in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no र in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no े in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no य in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no न in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ी in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no र in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no न in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ु in font [lmroman12-bold]:mapping=tex-text;!
+
+Overfull \hbox (42.59998pt too wide) in alignment at lines 1129--1150
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1150
+ []
+
+[22]
 runsystem(makeindex ragas.idx)...executed safely (allowed).
 
- (./ragas.ind) [22
+ (./ragas.ind) [23
 
 ]
 runsystem(makeindex composers.idx)...executed safely (allowed).
 
- (./composers.ind) [23
+ (./composers.ind) [24
 
 ] (./Sangita_pustakam.aux) ) 
 Here is how much of TeX's memory you used:
- 24666 strings out of 493007
- 527421 string characters out of 6136720
- 656859 words of memory out of 5000000
- 28247 multiletter control sequences out of 15000+600000
+ 24667 strings out of 493007
+ 527431 string characters out of 6136720
+ 659830 words of memory out of 5000000
+ 28248 multiletter control sequences out of 15000+600000
  535230 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  55i,13n,72p,10423b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Sangita_pustakam.pdf (26 pages).
+Output written on Sangita_pustakam.pdf (27 pages).
