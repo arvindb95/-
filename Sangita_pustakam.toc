@@ -565,8 +565,40 @@
 \select@language {sanskrit}
 \select@language {sanskrit}
 \select@language {sanskrit}
-\contentsline {section}{\numberline {10}सञ्चारि गीतानि}{23}
+\contentsline {section}{\numberline {10}सञ्चारि गीतानि}{24}
 \contentsline {subsection}{\numberline {10.1}वरवीणा}{24}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
+\select@language {sanskrit}
 \select@language {sanskrit}
 \select@language {sanskrit}
 \select@language {sanskrit}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.3.6)  5 NOV 2019 14:26
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.3.6)  7 NOV 2019 18:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1424,6 +1424,7 @@ Overfull \hbox (60.21599pt too wide) in alignment at lines 1202--1213
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
+[23]
 Missing character: There is no स in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ञ in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ् in font [lmroman12-bold]:mapping=tex-text;!
@@ -1443,7 +1444,11 @@ Missing character: There is no व in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ी in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ण in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ा in font [lmroman12-bold]:mapping=tex-text;!
-[23] [24]
+
+Underfull \vbox (badness 10000) detected at line 1271
+ []
+
+[24]
 runsystem(makeindex ragas.idx)...executed safely (allowed).
 
  (./ragas.ind) [25
@@ -1455,10 +1460,10 @@ runsystem(makeindex composers.idx)...executed safely (allowed).
 
 ] (./Sangita_pustakam.aux) ) 
 Here is how much of TeX's memory you used:
- 24668 strings out of 493007
- 527439 string characters out of 6136720
+ 24669 strings out of 493007
+ 527444 string characters out of 6136720
  681942 words of memory out of 5000000
- 28249 multiletter control sequences out of 15000+600000
+ 28250 multiletter control sequences out of 15000+600000
  535230 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  55i,13n,72p,10423b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
