@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.3.6)  7 NOV 2019 18:51
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.3.6)  16 DEC 2019 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1096,14 +1096,14 @@ LaTeX Font Info:    ... okay on input line 74.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(81.94394pt, 433.62pt, 81.94394pt)
+* h-part:(L,W,R)=(45.80893pt, 505.89pt, 45.80894pt)
 * v-part:(T,H,B)=(48.93872pt, 722.7pt, 73.40813pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=433.62pt
+* \textwidth=505.89pt
 * \textheight=722.7pt
-* \oddsidemargin=9.67395pt
-* \evensidemargin=9.67395pt
+* \oddsidemargin=-26.46106pt
+* \evensidemargin=-26.46106pt
 * \topmargin=-60.33127pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -1336,12 +1336,7 @@ Missing character: There is no ा in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no र in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ा in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ः in font [lmroman12-bold]:mapping=tex-text;!
-
-Overfull \hbox (3.68394pt too wide) in alignment at lines 817--837
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-[16] [17] [18] [19]
+ [16] [17] [18] [19]
 Missing character: There is no प in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ि in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ळ in font [lmroman12-bold]:mapping=tex-text;!
@@ -1394,11 +1389,6 @@ Missing character: There is no र in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no न in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ु in font [lmroman12-bold]:mapping=tex-text;!
 
-Overfull \hbox (42.59998pt too wide) in alignment at lines 1129--1150
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
 Underfull \vbox (badness 10000) detected at line 1150
  []
 
@@ -1411,17 +1401,7 @@ Missing character: There is no न in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no ा in font [lmroman12-bold]:mapping=tex-text;!
 Missing character: There is no भ in font [lmroman12-bold]:mapping=tex-text;!
 
-Overfull \hbox (60.21599pt too wide) in alignment at lines 1168--1202
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
 Underfull \vbox (badness 10000) detected at line 1202
- []
-
-
-Overfull \hbox (60.21599pt too wide) in alignment at lines 1202--1213
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 [23]
@@ -1449,23 +1429,34 @@ Underfull \vbox (badness 10000) detected at line 1271
  []
 
 [24]
+Missing character: There is no ज in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no य in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ज in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no य in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ज in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no य in font [lmroman12-bold]:mapping=tex-text;!
+
+Underfull \vbox (badness 10000) detected at line 1313
+ []
+
+[25]
 runsystem(makeindex ragas.idx)...executed safely (allowed).
 
- (./ragas.ind) [25
+ (./ragas.ind) [26
 
 ]
 runsystem(makeindex composers.idx)...executed safely (allowed).
 
- (./composers.ind) [26
+ (./composers.ind) [27
 
 ] (./Sangita_pustakam.aux) ) 
 Here is how much of TeX's memory you used:
- 24669 strings out of 493007
- 527444 string characters out of 6136720
- 681942 words of memory out of 5000000
- 28250 multiletter control sequences out of 15000+600000
+ 24670 strings out of 493007
+ 527450 string characters out of 6136720
+ 682469 words of memory out of 5000000
+ 28251 multiletter control sequences out of 15000+600000
  535230 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  55i,13n,72p,10423b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Sangita_pustakam.pdf (29 pages).
+Output written on Sangita_pustakam.pdf (30 pages).
