@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.3.6)  24 MAR 2020 00:20
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.3.6)  26 MAR 2020 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1471,23 +1471,37 @@ Underfull \vbox (badness 10000) detected at line 1421
  []
 
 [27]
+Missing character: There is no क in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no म in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ल in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no स in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ु in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ल in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no ो in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no च in font [lmroman12-bold]:mapping=tex-text;!
+Missing character: There is no न in font [lmroman12-bold]:mapping=tex-text;!
+
+Underfull \vbox (badness 10000) detected at line 1472
+ []
+
+[28] [29]
 runsystem(makeindex ragas.idx)...executed safely (allowed).
 
- (./ragas.ind) [28
+ (./ragas.ind) [30
 
 ]
 runsystem(makeindex composers.idx)...executed safely (allowed).
 
- (./composers.ind) [29
+ (./composers.ind) [31
 
 ] (./Sangita_pustakam.aux) ) 
 Here is how much of TeX's memory you used:
- 24672 strings out of 493007
- 527465 string characters out of 6136720
- 682641 words of memory out of 5000000
- 28253 multiletter control sequences out of 15000+600000
+ 24673 strings out of 493007
+ 527472 string characters out of 6136720
+ 682927 words of memory out of 5000000
+ 28254 multiletter control sequences out of 15000+600000
  535230 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  55i,13n,72p,10423b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Sangita_pustakam.pdf (32 pages).
+Output written on Sangita_pustakam.pdf (34 pages).
