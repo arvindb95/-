@@ -12,6 +12,15 @@
 
 \usepackage[table, dvipsnames]{xcolor}
 \definecolor{Gray}{gray}{0.9}
+\definecolor{Saffron}{HTML}{FF4500}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
+
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usetikzlibrary{decorations.pathmorphing}
@@ -38,12 +47,12 @@
 \def\l@subsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsection{#1}{#2}\endgroup}
 \makeatother
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setmainlanguage{english}
-\setotherlanguages{sanskrit} %% or other languages
+\setmainlanguage{sanskrit} 
 
-\newfontfamily\devanagarifont[Script=Devanagari]{Shobhika-Regular}
+\newfontfamily\devanagarifont[Script=Devanagari,Mapping=devanagarinumerals]{Shobhika-Regular}
 
 \title{\begin{sanskrit} \textbf{सङ्गीत पुस्तकम्} \end{sanskrit}}
 \date{}
@@ -68,6 +77,11 @@
 \usepackage{blindtext}
 \makeindex[name=ragas, columns=1, title=\begin{sanskrit}रागाः\end{sanskrit}]
 \makeindex[name=composers, columns=1, title=\begin{sanskrit}रचयिता\end{sanskrit}]
+
+\usepackage{titlesec}
+\titleformat{\section}[block]{\color{Saffron}\Large\bfseries\filcenter}{}{1em}{}
+\titleformat{\subsection}[hang]{\color{Saffron}\bfseries\filcenter}{}{1em}{}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -95,7 +109,7 @@
 \end{tikzpicture}
 \vspace*{\fill}\\
 
- \textbf{{\Huge ॐ}\\
+ \textbf{{\color{Saffron}\Huge ॐ}\\
  \vspace{50pt}
  ग॒णानां᳚ त्वा ग॒णप॑तिꣳ हवामहे
  क॒विं क॑वी॒नामु॑प॒मश्र॑वस्तमम् ।\\
@@ -133,9 +147,9 @@
 \end{titlingpage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\textbf{\Large अनुक्रमणिका}
-
+\begin{center}
+\textbf{\color{Saffron}\Large अनुक्रमणिका}
+\end{center}
 \tableofcontents
 
 \newpage
@@ -147,9 +161,9 @@
 
 \section{सरल वरसे}
 
-\begin{center}
- \textbf{सरल वरसे}
-\end{center}
+%\begin{center}
+% \textbf{सरल वरसे}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
@@ -251,9 +265,9 @@
 
 \section{दीर्घ वरसे}
 
-\begin{center}
- \textbf{दीर्घ वरसे}
-\end{center}
+%\begin{center}
+% \textbf{दीर्घ वरसे}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
@@ -327,9 +341,9 @@
 
 \section{दाट्टु वरसे}
 
-\begin{center}
- \textbf{दाट्टु वरसे}
-\end{center}
+%\begin{center}
+% \textbf{दाट्टु वरसे}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
@@ -403,9 +417,9 @@
 
 \section{मन्दर स्थायि वरसे}
 
-\begin{center}
- \textbf{मन्दर स्थायि वरसे}
-\end{center}
+%\begin{center}
+% \textbf{मन्दर स्थायि वरसे}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
@@ -477,9 +491,9 @@
 
 \section{तार स्थायि वरसे}
 
-\begin{center}
- \textbf{तार स्थायि वरसे}
-\end{center}
+%\begin{center}
+% \textbf{तार स्थायि वरसे}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
@@ -578,9 +592,9 @@
 
 \section{झण्टि वरसे}
 
-\begin{center}
- \textbf{झण्टि वरसे}
-\end{center}
+%\begin{center}
+% \textbf{झण्टि वरसे}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
@@ -784,20 +798,20 @@
 
 \section{स्वर राग ताल शास्त्र}
 
-\begin{center}
- \textbf{स्वर-राग-ताल शास्त्र}
-\end{center}
+%\begin{center}
+% \textbf{स्वर-राग-ताल शास्त्र}
+%\end{center}
 
 \textbf{स्वराः}
 
 \begin{itemize}
  \item षड्ज - प्रकृति
- \item रिषभ - शुद्ध (रि$_{1}$) \hspace{40pt} चतुःश्रुति (रि$_{2}$) \hspace{40pt} षड्श्रुति (रि$_{3}$)
- \item गान्धार - शुद्ध (ग$_{1}$) \hspace{40pt} साधारण (ग$_{2}$) \hspace{40pt} अन्तर (ग$_{3}$)
- \item मध्यम - शुद्ध (म$_{1}$) \hspace{40pt} प्रति (म$_{2}$)
+ \item रिषभ - शुद्ध (रि$_{\text{१}}$) \hspace{40pt} चतुःश्रुति (रि$_{\text{२}}$) \hspace{40pt} षड्श्रुति (रि$_{\text{३}}$)
+ \item गान्धार - शुद्ध (ग$_{\text{१}}$) \hspace{40pt} साधारण (ग$_{\text{२}}$) \hspace{40pt} अन्तर (ग$_{\text{३}}$)
+ \item मध्यम - शुद्ध (म$_{\text{१}}$) \hspace{40pt} प्रति (म$_{\text{२}}$)
  \item पञ्चम - प्रकृति
- \item धैवत - शुद्ध (द$_{1}$) \hspace{40pt} चतुःश्रुति (द$_{2}$) \hspace{40pt} षड्श्रुति (द$_{3}$)
- \item निषाद - शुद्ध (नि$_{1}$) \hspace{40pt} कैशिकी (नि$_{2}$) \hspace{40pt} काकली (नि$_{3}$)
+ \item धैवत - शुद्ध (द$_{\text{१}}$) \hspace{40pt} चतुःश्रुति (द$_{\text{२}}$) \hspace{40pt} षड्श्रुति (द$_{\text{३}}$)
+ \item निषाद - शुद्ध (नि$_{\text{१}}$) \hspace{40pt} कैशिकी (नि$_{\text{२}}$) \hspace{40pt} काकली (नि$_{\text{३}}$)
 \end{itemize}
 \newpage
 
@@ -805,9 +819,9 @@
 
 \section{अलङ्काराः}
 
-\begin{center}
- \textbf{अलङ्काराः (रागम् : मायामालवगौऴ)}
-\end{center}
+%\begin{center}
+% \textbf{अलङ्काराः (रागम् : मायामालवगौऴ)}
+%\end{center}
 
 \begin{center}
  १. चतुरश्र जाति ध्रुव ताल (\textbf{ । ० । । })
@@ -1014,28 +1028,29 @@
 
 \section{पिळ्ळारि गीतानि}
 
-\begin{center}
- \large{\textbf{पिळ्ळारि गीतानि}}
-\end{center}
+%\begin{center}
+% \large{\textbf{पिळ्ळारि गीतानि}}
+%\end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{श्री गणनाथ}
 
-\begin{center}
- \textbf{१. श्री गणनाथ}
-\end{center}
+%\begin{center}
+% \textbf{१. श्री गणनाथ}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
 रागम् : मलहरी \index[ragas]{मलहरी! श्री गणनाथ} & तालम् : रूपक  \\
-आरोहणम् : स रि$_{1}$ म$_{1}$ प द$_{1}$ $\Sa$ & रचयिता : श्री पुरन्दर दास \index[composers]{श्री पुरन्दर दास! श्री गणनाथ}\\
-अवरोहणम् : $\Sa$ द$_{1}$ प म$_{1}$ ग$_{3}$ रि$_{1}$ स & \\
+आरोहणम् : स रि$_{\text{१}}$ म$_{\text{१}}$ प द$_{\text{१}}$ $\Sa$ & रचयिता : श्री पुरन्दर दास \index[composers]{श्री पुरन्दर दास! श्री गणनाथ}\\
+अवरोहणम् : $\Sa$ द$_{\text{१}}$ प म$_{\text{१}}$ ग$_{\text{३}}$ रि$_{\text{१}}$ स & \\
 \end{tabular*}
 \end{center}
 
 \begin{center}
-\begin{longtable}{ @{\extracolsep{\fill}} c c c c c c c c c c c c c c c}
+\renewcommand*{\arraystretch}{1.5}
+\begin{longtable}{*{15} c}
 \hline
 \hline
  ।। & म & प & द & $\Sa$ & $\Sa$ & $\Ri$ & ।। & $\Ri$ & $\Sa$ & द & प & म & प & ।। \\ 
@@ -1070,20 +1085,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{कुन्द गौर}
-\begin{center}
- \textbf{२. कुन्द गौर}
-\end{center}
+%\begin{center}
+% \textbf{२. कुन्द गौर}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
 रागम् : मलहरी \index[ragas]{मलहरी! कुन्द गौर} & तालम् : रूपक  \\
-आरोहणम् : स रि$_{1}$ म$_{1}$ प द$_{1}$ $\Sa$ & रचयिता : श्री पुरन्दर दास \index[composers]{श्री पुरन्दर दास! कुन्द गौर}\\
-अवरोहणम् : $\Sa$ द$_{1}$ प म$_{1}$ ग$_{3}$ रि$_{1}$ स & \\
+आरोहणम् : स रि$_{\text{१}}$ म$_{\text{१}}$ प द$_{\text{१}}$ $\Sa$ & रचयिता : श्री पुरन्दर दास \index[composers]{श्री पुरन्दर दास! कुन्द गौर}\\
+अवरोहणम् : $\Sa$ द$_{\text{१}}$ प म$_{\text{१}}$ ग$_{\text{३}}$ रि$_{\text{१}}$ स & \\
 \end{tabular*}
 \end{center}
 
 \begin{center}
-\begin{longtable}{ @{\extracolsep{\fill}} c c c c c c c c c c c c c c c}
+\renewcommand*{\arraystretch}{1.5}
+\begin{longtable}{*{15} c}
 \hline
 \hline
  ।। & द & प & म & ग & रि & स & ।। & रि & म & प & द & म & प & ।। \\ 
@@ -1113,20 +1129,21 @@
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{केरेय नीरनु}
-\begin{center}
- \textbf{३. केरेय नीरनु}
-\end{center}
+%\begin{center}
+% \textbf{३. केरेय नीरनु}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
 रागम् : मलहरी \index[ragas]{मलहरी! केरेय नीरनु} & तालम् : तिस्र त्रिपुट  \\
-आरोहणम् : स रि$_{1}$ म$_{1}$ प द$_{1}$ $\Sa$ & रचयिता : श्री पुरन्दर दास \index[composers]{श्री पुरन्दर दास! केरेय नीरनु}\\
-अवरोहणम् : $\Sa$ द$_{1}$ प म$_{1}$ ग$_{3}$ रि$_{1}$ स & \\
+आरोहणम् : स रि$_{\text{१}}$ म$_{\text{१}}$ प द$_{\text{१}}$ $\Sa$ & रचयिता : श्री पुरन्दर दास \index[composers]{श्री पुरन्दर दास! केरेय नीरनु}\\
+अवरोहणम् : $\Sa$ द$_{\text{१}}$ प म$_{\text{१}}$ ग$_{\text{३}}$ रि$_{\text{१}}$ स & \\
 \end{tabular*}
 \end{center}
 
 \begin{center}
-\begin{longtable}{ @{\extracolsep{\fill}} c c c c c c c c c c c c c c c c c c c c c}
+\renewcommand*{\arraystretch}{1.5}
+\begin{longtable}{*{21} c}
 \hline
 \hline
  ।। & द & $\Sa$ & $\Sa$ & ।& द & प & । & म & प & ।। & द & द & प & । & म & म & । &  प & , & ।। \\ 
@@ -1152,20 +1169,21 @@
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{पदुमनाभ}
-\begin{center}
- \textbf{४. पदुमनाभ}
-\end{center}
+%\begin{center}
+% \textbf{४. पदुमनाभ}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
 रागम् : मलहरी \index[ragas]{मलहरी! पदुमनाभ} & तालम् : तिस्र त्रिपुट  \\
-आरोहणम् : स रि$_{1}$ म$_{1}$ प द$_{1}$ $\Sa$ & रचयिता : श्री पुरन्दर दास \index[composers]{श्री पुरन्दर दास! पदुमनाभ}\\
-अवरोहणम् : $\Sa$ द$_{1}$ प म$_{1}$ ग$_{3}$ रि$_{1}$ स & \\
+आरोहणम् : स रि$_{\text{१}}$ म$_{\text{१}}$ प द$_{\text{१}}$ $\Sa$ & रचयिता : श्री पुरन्दर दास \index[composers]{श्री पुरन्दर दास! पदुमनाभ}\\
+अवरोहणम् : $\Sa$ द$_{\text{१}}$ प म$_{\text{१}}$ ग$_{\text{३}}$ रि$_{\text{१}}$ स & \\
 \end{tabular*}
 \end{center}
 
 \begin{center}
-\begin{longtable}{ @{\extracolsep{\fill}} c c c c c c c c c c c c c c c c c c c c c}
+\renewcommand*{\arraystretch}{1.4}
+\begin{longtable}{*{21} c}
 \hline
 \hline
  ।। & रि & स & $\da$ & ।& स & , & । & स & , & ।। & म & ग & रि & । & म & म & । &  प & , & ।। \\ 
@@ -1217,26 +1235,29 @@
 
 \section{सञ्चारि गीतानि}
 
-\begin{center}
- \large{\textbf{सञ्चारि गीतानि}}
-\end{center}
+%\begin{center}
+% \large{\textbf{सञ्चारि गीतानि}}
+%\end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{वरवीणा}
-\begin{center}
- \textbf{१. वरवीणा}
-\end{center}
+%\begin{center}
+% \textbf{१. वरवीणा}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
 रागम् : मोहनम् \index[ragas]{मोहनम्! वरवीणा } & तालम् : रूपकम्  \\
-आरोहणम् : स रि$_{2}$ ग$_{3}$ प द$_{2}$ $\Sa$ & रचयिता : श्री अप्पैय दीक्षितर् \index[composers]{श्री अप्पैय दीक्षितर्! वरवीणा}\\
-अवरोहणम् : $\Sa$ द$_{2}$ प ग$_{3}$ रि$_{2}$ स & \\
+आरोहणम् : स रि$_{\text{२}}$ ग$_{\text{३}}$ प द$_{\text{२}}$ $\Sa$ & रचयिता : श्री अप्पैय दीक्षितर् \index[composers]{श्री अप्पैय दीक्षितर्! वरवीणा}\\
+अवरोहणम् : $\Sa$ द$_{\text{२}}$ प ग$_{\text{३}}$ रि$_{\text{२}}$ स & \\
 \end{tabular*}
 \end{center}
 
+
+
 \begin{center}
-\begin{longtable}{ @{\extracolsep{\fill}} c c c c c c c c c c c c c c c}
+\renewcommand*{\arraystretch}{1.5}
+\begin{longtable}{ *{15} c}
 \hline
 \hline
  ।। & ग & ग & प & , & प & , & ।। & द & प & $\Sa$ & , & $\Sa$ & , & ।। \\ 
@@ -1248,7 +1269,6 @@
  ।। & ग & प & द & $\Sa$ & द & , & ।।  & द & प & ग & ग & रि & , & ।। \\
  \rowcolor{Gray}
    & सु & रु & चि & र & बम् &  & & ब & र & वे &  & णी & & \\
-   \\
  ।। & ग & ग & द & प & ग & रि & ।। & प & ग & ग & रि & स & , & ।। \\
  \rowcolor{Gray}
    & सु & र & नु & त & कल् &  & & या &  &  &  & णी &  & \\ 
@@ -1277,23 +1297,24 @@
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{जय जय जय}
-\begin{center}
- \textbf{२. जय जय जय}
-\end{center}
+%\begin{center}
+% \textbf{२. जय जय जय}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
 रागम् : बेगड \index[ragas]{बेगड! जय जय जय} & तालम् : तिस्र त्रिपुट  \\
-आरोहणम् : स ग$_{3}$ रि$_{2}$ ग$_{3}$ म$_{1}$ प द$_{2}$ प $\Sa$ & रचयिता : * \index[composers]{*! जय जय जय}\\
-अवरोहणम् : $\Sa$ नि$_{3}$ द$_{2}$ प म$_{1}$ ग$_{3}$ रि$_{2}$ स & \\
+आरोहणम् : स ग$_{\text{३}}$ रि$_{\text{२}}$ ग$_{\text{३}}$ म$_{\text{१}}$ प द$_{\text{२}}$ प $\Sa$ & रचयिता : * \index[composers]{*! जय जय जय}\\
+अवरोहणम् : $\Sa$ नि$_{\text{३}}$ द$_{\text{२}}$ प म$_{\text{१}}$ ग$_{\text{३}}$ रि$_{\text{२}}$ स & \\
 \end{tabular*}
 \end{center}
 
 \begin{center}
-\begin{longtable}{ @{\extracolsep{\fill}} c c c c c c c c c c c c c c c c c c c c c}
+\renewcommand*{\arraystretch}{1.5}
+\begin{longtable}{ *{21} c}
 \hline
 \hline
- ।। & म & ग & म & ।& प & , & । & द & प & ।। & नि$_{2}$ & द & प & । & म & ग & । &  म & प & ।। \\ 
+ ।। & म & ग & म & ।& प & , & । & द & प & ।। & नि$_{\text{२}}$ & द & प & । & म & ग & । &  म & प & ।। \\ 
  \rowcolor{Gray}
  ।। & ज & य & ज & ।& य &  & । & ज & य & ।। & वि & ज & य & । & वि & नु & । &  & ता & ।। \\
  ।। & $\Sa$ & नि & $\Sa$ & ।& द & प & । & $\Sa$ & , & ।। & $\Sa$ & नि & $\Sa$ & । & $\Ri$ & $\Sa$ & । & $\Ma$ & $\Ga$ & ।। \\ 
@@ -1302,7 +1323,7 @@
  ।। & $\Ri$ & $\Sa$ & नि & ।& $\Sa$ & $\Ri$ & । & $\Sa$ & नि & ।। & $\Sa$ & नि & $\Sa$ & । & द & नि & । & प & द & ।। \\ 
  \rowcolor{Gray}
  ।। & कि & ल &  & ।& ली &  & । & ला &  & ।। & अ &  &  & । &  &  & । &  &  & ।। \\
- ।। & नि$_{2}$ & द & प & ।& म & ग & । & रि & स & ।। & म & ग & म & । & रि & ग & । & म & प & ।। \\ 
+ ।। & नि$_{\text{२}}$ & द & प & ।& म & ग & । & रि & स & ।। & म & ग & म & । & रि & ग & । & म & प & ।। \\ 
  \rowcolor{Gray}
  ।। & अ &  &  & ।&  &  & । &  &  & ।। & म & धु & रे & । & मी &  & । & ना &  & ।। \\
  ।। & $\Sa$ & नि & $\Sa$ & ।& द & प & । & $\Sa$ & , & ।। &  &  &  &  &  &  &  &  &  & \\ 
@@ -1316,23 +1337,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{मन्दर धारे}
-\begin{center}
- \textbf{३. मन्दर धारे}
-\end{center}
+%\begin{center}
+% \textbf{३. मन्दर धारे}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
 रागम् : काम्भोजी \index[ragas]{काम्भोजी! मन्दर धारे} & तालम् : अादि \\
-आरोहणम् : स रि$_{2}$ ग$_{3}$ म$_{1}$ प द$_{2}$ $\Sa$ & रचयिता : श्री पैदल गुरुमूर्ति शास्त्री \index[composers]{श्री पैदल गुरुमूर्ति शास्त्री! मन्दर धारे}\\
-अवरोहणम् : $\Sa$ नि$_{2}$ द$_{2}$ प म$_{1}$ ग$_{3}$ रि$_{2}$ स  $\mni_{3}$ $\pa$ $\da_{2}$ स & \\
+आरोहणम् : स रि$_{\text{२}}$ ग$_{\text{३}}$ म$_{\text{१}}$ प द$_{\text{२}}$ $\Sa$ & रचयिता : श्री पैदल गुरुमूर्ति शास्त्री \index[composers]{श्री पैदल गुरुमूर्ति शास्त्री! मन्दर धारे}\\
+अवरोहणम् : $\Sa$ नि$_{\text{२}}$ द$_{\text{२}}$ प म$_{\text{१}}$ ग$_{\text{३}}$ रि$_{\text{२}}$ स  $\mni_{3}$ $\pa$ $\da_{2}$ स & \\
 \end{tabular*}
 \end{center}
 
 \begin{center}
-\begin{longtable}{ @{\extracolsep{\fill}} c c c c c c c c c c c c }
+\renewcommand*{\arraystretch}{1.4}
+\begin{longtable}{ *{12} c}
 \hline
 \hline
- ।। & $\Sa$ & , & नि$_{3}$ & प & । & द & द & । & $\Sa$ & & ।। \\
+ ।। & $\Sa$ & , & नि$_{\text{३}}$ & प & । & द & द & । & $\Sa$ & & ।। \\
  \rowcolor{Gray}
  ।। & मन् &  & द & र & । & धा &  & । & रे & & ।।\\
  ।। & द & $\Sa$ & $\Ri$ & $\Ma$ & । & $\Ga$ & $\Ga$ & । & $\Ri$ & $\Sa$ & ।। \\
@@ -1368,7 +1390,7 @@
   ।। & द & द & प & म & । & ग & ग & । & रि &  स & ।। \\
  \rowcolor{Gray}
  ।। & म & कु & ट & म & । & यू &  & । &  & र & ।।\\
-।। & $\Sa$ & , & नि$_{3}$ & प & । & द & द & । & $\Sa$ & & ।। \\
+।। & $\Sa$ & , & नि$_{\text{३}}$ & प & । & द & द & । & $\Sa$ & & ।। \\
  \rowcolor{Gray}
  ।। & मन् &  & द & र & । & धा &  & । & रे & & ।।\\
  \hline
@@ -1379,20 +1401,21 @@
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{कमलजा दल}
-\begin{center}
- \textbf{४. कमलजा दल}
-\end{center}
+%\begin{center}
+% \textbf{४. कमलजा दल}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
 रागम् : कल्याणी \index[ragas]{कल्याणी! कमलजा दल} & तालम् : तिश्र त्रिपुट \\
-आरोहणम् : स रि$_{2}$ ग$_{3}$ म$_{2}$ प द$_{2}$ नि$_{3}$ $\Sa$ & रचयिता :  श्री पुरन्दर दास\index[composers]{श्री पुरन्दर दास! कमलजा दल}\\
-अवरोहणम् : $\Sa$ नि$_{3}$ द$_{2}$ प म$_{2}$ ग$_{3}$ रि$_{2}$ स  \\
+आरोहणम् : स रि$_{\text{२}}$ ग$_{\text{३}}$ म$_{\text{२}}$ प द$_{\text{२}}$ नि$_{\text{३}}$ $\Sa$ & रचयिता :  श्री पुरन्दर दास\index[composers]{श्री पुरन्दर दास! कमलजा दल}\\
+अवरोहणम् : $\Sa$ नि$_{\text{३}}$ द$_{\text{२}}$ प म$_{\text{२}}$ ग$_{\text{३}}$ रि$_{\text{२}}$ स  \\
 \end{tabular*}
 \end{center}
 
 \begin{center}
-\begin{longtable}{ @{\extracolsep{\fill}} c c c c c c c c c c c c c c c c c c c c c}
+\renewcommand*{\arraystretch}{1.5}
+\begin{longtable}{ *{21} c}
 \hline
 \hline
  ।। & $\Sa$ & $\Sa$ & $\Sa$ & ।& नि & द & । & नि & $\Sa$ & ।। & नि & द & प & । & द & प & । &  म & प & ।। \\ 
@@ -1422,80 +1445,59 @@
 \end{center}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{कमल सुलोचन}
-\begin{center}
- \textbf{५. कमल सुलोचन}
-\end{center}
+%\begin{center}
+% \textbf{५. कमल सुलोचन}
+%\end{center}
 
 \begin{center}
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
 रागम् : आनन्द भैरवी \index[ragas]{आनन्द भैरवी! कमल सुलोचन} & तालम् : एक \\
-आरोहणम् : स ग$_{2}$ रि$_{2}$ ग$_{2}$ म$_{1}$ प द$_{2}$ प $\Sa$ & रचयिता :  श्री पुरन्दर दास\index[composers]{श्री पुरन्दर दास! कमल सुलोचन}\\
-अवरोहणम् : $\Sa$ नि$_{2}$ द$_{2}$ प म$_{1}$ ग$_{2}$ रि$_{2}$ नि$_{2}$ स  \\
+आरोहणम् : स ग$_{\text{२}}$ रि$_{\text{२}}$ ग$_{\text{२}}$ म$_{\text{१}}$ प द$_{\text{२}}$ प $\Sa$ & रचयिता :  श्री पुरन्दर दास\index[composers]{श्री पुरन्दर दास! कमल सुलोचन}\\
+अवरोहणम् : $\Sa$ नि$_{\text{२}}$ द$_{\text{२}}$ प म$_{\text{१}}$ ग$_{\text{२}}$ रि$_{\text{२}}$ नि$_{\text{२}}$ स  \\
 \end{tabular*}
 \end{center}
 
 \begin{center}
-\begin{longtable}{ @{\extracolsep{\fill}} c c c c c c c c c c c }
+\renewcommand*{\arraystretch}{1.5}
+\setlength\LTleft{-0.6cm}
+\begin{longtable}{ *{21} c}
 \hline
 \hline
- ।। & नि & द & नि & $\Sa$ & ।। & $\Sa$ & , & $\Sa$ & $\Sa$ & ।। \\
+ ।। & नि & द & नि & $\Sa$ & ।। & $\Sa$ & , & $\Sa$ & $\Sa$ & ।। & $\Ga$ & $\Ri$ & $\Sa$ & नि & ।। & नि & द & प & म & ।। \\
  \rowcolor{Gray}
- ।। & क & म & ल & सु & ।। & लो &  & च & न & ।।\\
- ।। & $\Ga$ & $\Ri$ & $\Sa$ & नि & ।। & नि & द & प & म & ।। \\
+ ।। & क & म & ल & सु & ।। & लो &  & च & न & ।। & वि & म & ल & त & ।। & टा &  & कि & नी & ।। \\ 
+ ।। & प & प & , & द & ।। & नि & द & प & म & ।। & म & प & म & प & ।। & ग & रि & स & , & ।। \\
  \rowcolor{Gray}
- ।। & वि & म & ल & त & ।। & टा &  & कि & नी & ।।\\
-  ।। & प & प & , & द & ।। & नि & द & प & म & ।। \\
+ ।। & म & रा &  & ल & ।। & गा &  & मि & नी & ।। & क & रि & ह & र & ।। & म &  & ध्ये &  & ।।\\
+  ।। & स & , & नि & , & ।। & स & ग & ग & म & ।। & ग & म & प & म & ।। & ग & , & रि & $\mni$ & ।।\\
  \rowcolor{Gray}
- ।। & म & रा &  & ल & ।। & गा &  & मि & नी & ।।\\
-  ।। & म & प & म & प & ।। & ग & रि & स & , & ।। \\
+ ।। & बि & म् & बा &  & ।। & द & रे & या &  & ।। & न & न & वि & दु & ।। & मण् &  & ड & ल & ।। \\
+
+ ।। & स & , & स & , & ।। & & & & & & & & & & & & & & &\\
  \rowcolor{Gray}
- ।। & क & रि & ह & र & ।। & म &  & ध्ये &  & ।।\\
-  ।। & स & , & नि & , & ।। & स & ग & ग & म & ।। \\
+ ।। & रे &  & रे &  & ।। & & & & & & & & & & & & & & & \\
+  ।। & प & , & म & ग & ।। & म & , & ग & रि & ।। & ग & , & रि & $\mni$ & ।। & स & , & स & , & ।। \\
  \rowcolor{Gray}
- ।। & बि & म् & बा &  & ।। & द & रे & या &  & ।।\\
-  ।। & ग & म & प & म & ।। & ग & , & रि & $\mni$ & ।। \\
+ ।। & च & न् & द & न & ।। & कु & ङ् & कु & म & ।। & प & ङ् & क & ज & ।। & रे &  & रे &  & ।। \\
+ ।। & प & प & म & ग & ।। & म & म & ग & रि & ।। & ग & ग & रि & $\mni$ & ।। & स & , & स & , & ।। \\
  \rowcolor{Gray}
- ।। & न & न & वि & दु & ।। & मण् &  & ड & ल & ।।\\
- ।। & स & , & स & , & ।। & & & & & \\
+ ।। & प & रि & म & ल & ।। & क & स् & तू & रि & ।। & ति & ल & क & द & ।। & रे &  & रे &  & ।। \\
+
+ ।। & स & ग & रि & ग & ।। & म & ग & म & , & ।। & म & नि & द & नि & ।। & प & द & नि & $\Sa$ & ।।\\
  \rowcolor{Gray}
- ।। & रे &  & रे &  & ।। & & & & & \\
-  ।। & प & , & म & ग & ।। & म & , & ग & रि & ।। \\
+ ।। & जा &  & जि &  & ।। & शै &  & या & & ।। & क & च & कु & च & ।। & घ & न & ज & ग & ।। \\
+ ।। & $\Ga$ & $\Ri$ & $\Sa$ & नि & ।। & नि & द & प & म & ।। & प & प & , & द & ।। & नि & द & प & म & ।।\\
  \rowcolor{Gray}
- ।। & च & न् & द & न & ।। & कु & ङ् & कु & म & ।।\\
-  ।। & ग & , & रि & $\mni$ & ।। & स & , & स & , & ।। \\
+ ।। & ना &  & द & म् & ।। & बो &  & रु & ह & ।। & म & रा &  & ल & ।। & गा &  & मि & नी & ।। \\
+ ।। & म & प & म & प & ।। & ग & रि & स & , & ।। & स & , & नि & , & ।। & स & ग & ग & म & ।। \\
  \rowcolor{Gray}
- ।। & प & ङ् & क & ज & ।। & रे &  & रे &  & ।।\\
-   ।। & प & प & म & ग & ।। & म & म & ग & रि & ।। \\
+ ।। & क & रि & ह & र & ।। & म &  & ध्ये &  & ।। & बि & म् & बा &  & ।। & द & रे & या &  & ।। \\
+ ।। & ग & म & प & म & ।। & ग & , & रि & $\mni$ & ।।& स & , & स & , & ।। & & & & & \\
  \rowcolor{Gray}
- ।। & प & रि & म & ल & ।। & क & स् & तू & रि & ।।\\
-  ।। & ग & ग & रि & $\mni$ & ।। & स & , & स & , & ।। \\
- \rowcolor{Gray}
- ।। & ति & ल & क & द & ।। & रे &  & रे &  & ।।\\
-  ।। & स & ग & रि & ग & ।। & म & ग & म & , & ।। \\
- \rowcolor{Gray}
- ।। & जा &  & जि &  & ।। & शै &  & या & & ।।\\
-  ।। & म & नि & द & नि & ।। & प & द & नि & $\Sa$ & ।। \\
- \rowcolor{Gray}
- ।। & क & च & कु & च & ।। & घ & न & ज & ग & ।।\\
-   ।। & $\Ga$ & $\Ri$ & $\Sa$ & नि & ।। & नि & द & प & म & ।। \\
- \rowcolor{Gray}
- ।। & ना &  & द & म् & ।। & बो &  & रु & ह & ।।\\
- ।। & प & प & , & द & ।। & नि & द & प & म & ।। \\
- \rowcolor{Gray}
- ।। & म & रा &  & ल & ।। & गा &  & मि & नी & ।।\\
-  ।। & म & प & म & प & ।। & ग & रि & स & , & ।। \\
- \rowcolor{Gray}
- ।। & क & रि & ह & र & ।। & म &  & ध्ये &  & ।।\\
-  ।। & स & , & नि & , & ।। & स & ग & ग & म & ।। \\
- \rowcolor{Gray}
- ।। & बि & म् & बा &  & ।। & द & रे & या &  & ।।\\
-  ।। & ग & म & प & म & ।। & ग & , & रि & $\mni$ & ।। \\
- \rowcolor{Gray}
- ।। & न & न & वि & दु & ।। & मण् &  & ड & ल & ।।\\
- ।। & स & , & स & , & ।। & & & & & \\
- \rowcolor{Gray}
- ।। & रे &  & रे &  & ।। & & & & & \\
+ ।। & न & न & वि & दु & ।। & मण् &  & ड & ल & ।। & रे &  & रे &  & ।। & & & & & \\
+
  \hline
 \hline
 \end{longtable}
