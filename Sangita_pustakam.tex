@@ -24,7 +24,7 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usetikzlibrary{decorations.pathmorphing}
-
+\usetikzlibrary{decorations.text}
 \makeatletter
 \renewcommand{\@seccntformat}[1]{}
 \makeatother
@@ -52,8 +52,8 @@
 
 \setmainlanguage{sanskrit} 
 
-\newfontfamily\devanagarifont[Script=Devanagari,Mapping=devanagarinumerals]{Shobhika-Regular}
-
+\newfontfamily\shobhika[Script=Devanagari,Mapping=devanagarinumerals]{Shobhika}
+\newfontfamily\devanagarifont[Script=Devanagari,Mapping=devanagarinumerals]{Sanskrit 2003}
 
 \title{\begin{sanskrit} \textbf{सङ्गीत पुस्तकम्} \end{sanskrit}}
 \date{}
@@ -95,22 +95,18 @@
 \pagenumbering{gobble}
 \begin{center}
 \begin{tikzpicture}[overlay,remember picture]
-    \draw [line width=1mm,decorate,decoration={border
-        %,segment length=<length>,amplitude=<length>
-        }]
+    \draw [line width=1mm]
         ($ (current page.north west) + (1cm,-1cm) $)
         rectangle
         ($ (current page.south east) + (-1cm,1cm) $);
-    \draw [line width=0.5mm,decorate,decoration={border
-        %,segment length=<length>,amplitude=<length>
-        }]
+    \draw [line width=0.5mm]
         ($ (current page.north west) + (1.2cm,-1.2cm) $)
         rectangle
         ($ (current page.south east) + (-1.2cm,1.2cm) $);
 \end{tikzpicture}
 \vspace*{\fill}\\
 
- \textbf{{\color{Saffron}\Huge ॐ}\\
+ \textbf{{\shobhika{\color{Saffron}\Huge ॐ}\\
  \vspace{50pt}
  ग॒णानां᳚ त्वा ग॒णप॑तिꣳ हवामहे
  क॒विं क॑वी॒नामु॑प॒मश्र॑वस्तमम् ।\\
@@ -124,22 +120,18 @@
  चक्षुुरुन्मीलितं येन तस्मै श्री गुरवे नमः ।।\\
  \vspace{50pt}
  अखण्ड मण्डलाकारं व्याप्तं येन चराचरम् ।\\
- तत्पदं दर्शितं येन तस्मै श्री गुरवे नमः ।।}
+ तत्पदं दर्शितं येन तस्मै श्री गुरवे नमः ।।}}
 \end{center}
 \vspace*{\fill}
 \newpage
 \centering
 \maketitle
 \begin{tikzpicture}[overlay,remember picture]
-    \draw [line width=1mm,decorate,decoration={border
-        %,segment length=<length>,amplitude=<length>
-        }]
+    \draw [line width=1mm]
         ($ (current page.north west) + (1cm,-1cm) $)
         rectangle
         ($ (current page.south east) + (-1cm,1cm) $);
-    \draw [line width=0.5mm,decorate,decoration={border
-        %,segment length=<length>,amplitude=<length>
-        }]
+    \draw [line width=0.5mm]
         ($ (current page.north west) + (1.2cm,-1.2cm) $)
         rectangle
         ($ (current page.south east) + (-1.2cm,1.2cm) $);
@@ -1352,15 +1344,15 @@
 
 \begin{center}
 \renewcommand*{\arraystretch}{1.4}
-\begin{longtable}{ *{12} c}
+\begin{longtable}{ *{22} c}
 \hline
 \hline
- ।। & $\tar{स}$ & , & नि$_{\text{३}}$ & प & । & द & द & । & $\tar{स}$ & & ।। \\
+ ।। & $\tar{स}$ & , & नि$_{\text{३}}$ & प & । & द & द & । & $\tar{स}$ & , & ।। \\
  \rowcolor{Gray}
- ।। & मन् &  & द & र & । & धा &  & । & रे & & ।।\\
- ।। & द & $\tar{स}$ & $\tar{रि}$ & $\tar{म}$ & । & $\tar{ग}$ & $\tar{ग}$ & । & $\tar{रि}$ & $\tar{स}$ & ।। \\
+ ।। & मन् &  & द & र & । & धा &  & । & रे & &  ।।\\
+।। & द & $\tar{स}$ & $\tar{रि}$ & $\tar{म}$ & । & $\tar{ग}$ & $\tar{ग}$ & । & $\tar{रि}$ & $\tar{स}$ & ।। \\
  \rowcolor{Gray}
- ।। & मो &  & क्ष & मु & । & रा &  & । &  & रे & ।।\\
+।। & मो &  & क्ष & मु & । & रा &  & । &  & रे & ।।\\
   ।। & $\tar{स}$ & $\tar{रि}$ & $\tar{स}$ & $\tar{स}$ & । & नि & नि & । & द & प & ।। \\
  \rowcolor{Gray}
  ।। & दै &  & त्य & सं & । & हा &  & । &  & रे & ।।\\
@@ -1462,7 +1454,7 @@
 
 \begin{center}
 \renewcommand*{\arraystretch}{1.5}
-\setlength\LTleft{-0.6cm}
+%\setlength\LTleft{-0.3cm}
 \begin{longtable}{ *{21} c}
 \hline
 \hline
@@ -1521,18 +1513,18 @@
 \begin{longtable}{ *{20} c}
 \hline
 \hline
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------
 \multicolumn{20}{l}{ ।। पल्लवि ।।}\\
 \\
 ।। & स & ,& ,& रि & ग & ,& प & , & । & द & ,& $\tar{स}$ & , & । & नि & , &  द & , & ।।\\
 ।। & प & , & द & प & म & ग & रि & स & । & रि & स & $\man{नि}$ & $\man{द}$ & । & स &  , &  , &  , & ।। \\ 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------
 \\
 \multicolumn{20}{l}{ ।। अनुपल्लवि ।।}\\
 \\
 ।। & स & ,& ,& रि & ग & ,& प & , & । & म & ,& ग & , & । & प & , &  द & , & ।।\\
 ।। & $\tar{रि}$ & , & , & $\tar{स}$ & नि & , & , & द & । & प & , & , & म & । & ग &  , &  , &  रि & ।। \\
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------
 \\
 \multicolumn{20}{l}{ ।। चरणानि ।।}\\
 \\
@@ -1574,6 +1566,16 @@
 \hline
 \hline
 \end{longtable}
+\end{center}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{खमास्}
+\begin{center}
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+रागम् : खमास् \index[ragas]{खमास्! खमास् स्वरजति} & तालम् : आदि \\
+आरोहणम् : स म$_{\text{१}}$ ग$_{\text{३}}$ म$_{\text{१}}$ प द$_{\text{२}}$ नि$_{\text{२}}$ $\tar{स}$ & रचयिता :  \index[composers]{! खमास् स्वरजति}\\
+अवरोहणम् : $\tar{स}$ नि$_{\text{२}}$ द$_{\text{२}}$ प म$_{\text{१}}$ ग$_{\text{३}}$ रि$_{\text{२}}$ स  \\
+\end{tabular*}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
